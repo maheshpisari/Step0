@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "12d866b2-4f0b-43ff-8ae4-f41a3bfb1a14",
+		"name": "Pre-Set_Mandatory_Events_Payloads",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3202956"
+	},
+	"item": [
+		{
+			"name": "Product View",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "API KEY FROM THE PANEL",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n    \"asset_id\" : \"CREATE THE ASSET AND USE THE ID HERE app_id or website register value\",\r\n    \"activity_name\" : \"Product View\",\r\n    \"timestamp\" : \"VISIT THE WEBSITE https://www.utctime.net/ AND PICK THE FIRST VALUE UNDER UTC Date Time Now\",\r\n    \"identity\" : \"ENTER A DUMMY PRIMARY KEY (EMAIL / MOBILE / CUSTOMER ID ETC)\",\r\n    \"activity_source\" : \"ENTER app OR web BASED ON WHO IS EXECUTING THESE SCRIPTS FIRST\",\r\n    \"activity_params\" :\r\n    {\r\n        \"currency\" : \"INR\",\r\n        \"items\": [\r\n                            {\r\n                                \"prid\" : \"1234\"\r\n                             }\r\n                ]\r\n            }\r\n}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api2.netcoresmartech.com/v1/activity/upload",
+					"protocol": "https",
+					"host": [
+						"api2",
+						"netcoresmartech",
+						"com"
+					],
+					"path": [
+						"v1",
+						"activity",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add To Cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "API KEY FROM THE PANEL",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n    \"asset_id\" : \"CREATE THE ASSET AND USE THE ID HERE app_id or website register value\",\r\n    \"activity_name\" : \"Product View\",\r\n    \"timestamp\" : \"VISIT THE WEBSITE https://www.utctime.net/ AND PICK THE FIRST VALUE UNDER UTC Date Time Now\",\r\n    \"identity\" : \"ENTER A DUMMY PRIMARY KEY (EMAIL / MOBILE / CUSTOMER ID ETC)\",\r\n    \"activity_source\" : \"ENTER app OR web BASED ON WHO IS EXECUTING THESE SCRIPTS FIRST\",\r\n    \"activity_params\" :\r\n    {\r\n        \"currency\" : \"INR\",\r\n        \"items\": [\r\n                            {\r\n                                \"prid\" : \"1234\",\r\n                                \"prqt\" : 1\r\n                             }\r\n                ]\r\n            }\r\n}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api2.netcoresmartech.com/v1/activity/upload",
+					"protocol": "https",
+					"host": [
+						"api2",
+						"netcoresmartech",
+						"com"
+					],
+					"path": [
+						"v1",
+						"activity",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cart View",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "API KEY FROM THE PANEL",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n    \"asset_id\" : \"CREATE THE ASSET AND USE THE ID HERE app_id or website register value\",\r\n    \"activity_name\" : \"Cart View\",\r\n    \"timestamp\" : \"VISIT THE WEBSITE https://www.utctime.net/ AND PICK THE FIRST VALUE UNDER UTC Date Time Now\",\r\n    \"identity\" : \"ENTER A DUMMY PRIMARY KEY (EMAIL / MOBILE / CUSTOMER ID ETC)\",\r\n    \"activity_source\" : \"ENTER app OR web BASED ON WHO IS EXECUTING THESE SCRIPTS FIRST\",\r\n    \"activity_params\" :\r\n    {\r\n        \"amount\" : 100.05,\r\n        \"total_item_qty\" : 2,\r\n        \"currency\" : \"INR\",\r\n        \"items\": [\r\n                            {\r\n                                \"prid\" : \"1234\",\r\n                                \"prqt\" : 1\r\n                             },\r\n                             {\r\n                                \"prid\" : \"1234\",\r\n                                \"prqt\" : 1\r\n                             }\r\n                ]\r\n            }\r\n}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api2.netcoresmartech.com/v1/activity/upload",
+					"protocol": "https",
+					"host": [
+						"api2",
+						"netcoresmartech",
+						"com"
+					],
+					"path": [
+						"v1",
+						"activity",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Checkout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "API KEY FROM THE PANEL",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n    \"asset_id\" : \"CREATE THE ASSET AND USE THE ID HERE app_id or website register value\",\r\n    \"activity_name\" : \"Checkout\",\r\n    \"timestamp\" : \"VISIT THE WEBSITE https://www.utctime.net/ AND PICK THE FIRST VALUE UNDER UTC Date Time Now\",\r\n    \"identity\" : \"ENTER A DUMMY PRIMARY KEY (EMAIL / MOBILE / CUSTOMER ID ETC)\",\r\n    \"activity_source\" : \"ENTER app OR web BASED ON WHO IS EXECUTING THESE SCRIPTS FIRST\",\r\n    \"activity_params\" :\r\n    {\r\n        \"amount\" : 100.05,\r\n        \"total_item_qty\" : 2,\r\n        \"currency\" : \"INR\",\r\n        \"items\": [\r\n                            {\r\n                                \"prid\" : \"1234\",\r\n                                \"prqt\" : 1\r\n                             },\r\n                             {\r\n                                \"prid\" : \"1234\",\r\n                                \"prqt\" : 1\r\n                             }\r\n                ]\r\n            }\r\n}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api2.netcoresmartech.com/v1/activity/upload",
+					"protocol": "https",
+					"host": [
+						"api2",
+						"netcoresmartech",
+						"com"
+					],
+					"path": [
+						"v1",
+						"activity",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Purchase",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "API KEY FROM THE PANEL",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n    \"asset_id\" : \"CREATE THE ASSET AND USE THE ID HERE app_id or website register value\",\r\n    \"activity_name\" : \"Product Purchase\",\r\n    \"timestamp\" : \"VISIT THE WEBSITE https://www.utctime.net/ AND PICK THE FIRST VALUE UNDER UTC Date Time Now\",\r\n    \"identity\" : \"ENTER A DUMMY PRIMARY KEY (EMAIL / MOBILE / CUSTOMER ID ETC)\",\r\n    \"activity_source\" : \"ENTER app OR web BASED ON WHO IS EXECUTING THESE SCRIPTS FIRST\",\r\n    \"activity_params\" :\r\n    {\r\n        \"amount\" : 100.05,\r\n        \"total_item_qty\" : 2,\r\n        \"currency\" : \"INR\",\r\n        \"items\": [\r\n                            {\r\n                                \"prid\" : \"1234\",\r\n                                \"prqt\" : 1\r\n                             },\r\n                             {\r\n                                \"prid\" : \"1234\",\r\n                                \"prqt\" : 1\r\n                             }\r\n                ]\r\n            }\r\n}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api2.netcoresmartech.com/v1/activity/upload",
+					"protocol": "https",
+					"host": [
+						"api2",
+						"netcoresmartech",
+						"com"
+					],
+					"path": [
+						"v1",
+						"activity",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
